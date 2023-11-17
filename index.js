@@ -202,6 +202,15 @@ function checkAppleCollision() {
   }
 }
 
+function buttonup() {
+  new KeyboardEvent('keydown', {
+  key: 'w',
+  code: 'w',
+  which: 87,
+  keyCode: 87,
+});
+}
+
 document.body.addEventListener("keydown", keyDown);
 
 function keyDown(event) {
