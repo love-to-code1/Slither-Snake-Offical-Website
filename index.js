@@ -1,6 +1,15 @@
 const canvas = document.getElementById("game");
 const ctx = canvas.getContext("2d");
 
+function buttonup() {
+  new KeyboardEvent('keydown', {
+  key: 'w',
+  code: 'w',
+  which: 87,
+  keyCode: 87,
+});
+}
+
 function play() {
   show(document.getElementById('controlls'));
   hide(document.getElementById('play'));
@@ -200,15 +209,6 @@ function checkAppleCollision() {
     score++;
     gulpSound.play();
   }
-}
-
-function buttonup() {
-  new KeyboardEvent('keydown', {
-  key: 'w',
-  code: 'w',
-  which: 87,
-  keyCode: 87,
-});
 }
 
 document.body.addEventListener("keydown", keyDown);
