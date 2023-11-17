@@ -18,6 +18,7 @@ function play() {
   hide(document.getElementById('title'));
   hide(document.getElementById('title2'));
   hide(document.getElementById('description'));
+  show(document.getElementById('wasd1'))
 }
 
 const color = ["red", "orange", "yellow", "green", "blue", "purple"];
